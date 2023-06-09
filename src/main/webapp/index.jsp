@@ -2,12 +2,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Index</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+    <h1>Criar Conta</h1>
+
+    <form action="" method="POST">
+        Nome: <br>
+        <input type="text" name="nome"> <br>
+        Email: <br>
+        <input type="text" name="email"> <br>
+        Senha: <br>
+        <input type="text" name="senha"> <br><br>
+        <button>Criar</button>
+    </form>
 </body>
 </html>
