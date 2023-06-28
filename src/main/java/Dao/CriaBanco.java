@@ -9,8 +9,7 @@ public class CriaBanco {
 
         Connection conexao = fabricaConexao.getConexao();
         Statement stmt = conexao.createStatement();
-        stmt.execute("CREATE DATABASE IF NOT EXISTS savelink");
-
+        stmt.execute("CREATE DATABASE IF NOT EXISTS teste2");
 
         System.out.println("Banco criado com Sucesso!");
     }

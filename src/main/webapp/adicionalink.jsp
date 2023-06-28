@@ -11,6 +11,12 @@
     <title>Adiciona Link</title>
 </head>
 <body>
-
+    <form action="ServletLinkAdicionar" method="GET">
+    Titulo: <br>
+    <input type="text" name="titulo"><br>
+    URL: <br>
+    <input type="text" name="url"><br><br>
+    <button>Adicionar</button>
+    </form>
 </body>
 </html>

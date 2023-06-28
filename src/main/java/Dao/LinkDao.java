@@ -7,17 +7,16 @@ import java.sql.SQLException;
 
 public class LinkDao{
 
-    public static void adicionar(Link Link) throws SQLException {
+    public void adicionar(Link Link) throws SQLException {
 
         Connection conexao = fabricaConexao.getConexao();
-        String sql = "INSERT INTO links(id, titulo, link) values(null,?,?)";
+        String sql = "INSERT INTO links(titulo, link) values(?,?)";
 
         PreparedStatement stmt = conexao.prepareStatement(sql);
         stmt.setString(1, Link.getTitulo());
         stmt.setString(2, Link.getUrl());
-
         stmt.execute();
-        System.out.println("executando sql aqui");
+
         stmt.close();
         conexao.close();
     }
